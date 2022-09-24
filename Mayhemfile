@@ -1,0 +1,5 @@
+project: stringtie
+target: stringtie
+
+cmds:
+  - cmd: /stringtie -o out.gtf @@
