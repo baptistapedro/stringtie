@@ -1,7 +1,7 @@
 FROM fuzzers/afl:2.52 as builder
 
 RUN apt-get update
-RUN apt install -y build-essential wget git clang cmake  automake autotools-dev  libtool zlib1g zlib1g-dev libexif-dev
+RUN apt install -y build-essential wget git curl clang cmake  automake autotools-dev  libtool zlib1g zlib1g-dev libexif-dev
 ADD . /stringtie
 WORKDIR /stringtie
 RUN rm -rf /stringtie/tests
